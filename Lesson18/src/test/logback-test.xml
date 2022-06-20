@@ -1,0 +1,14 @@
+<configuration debug="true">
+    <!-- in the absence of the class attribute, assume
+    ch.qos.logback.core.hook.DefaultShutdownHook -->
+    <shutdownHook/>
+    <appender name ="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss:SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="OFF">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
